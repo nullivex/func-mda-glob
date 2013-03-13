@@ -21,11 +21,12 @@ function server($name=false){
 }
 
 function session($name,$value=false){
-	if($value !== false) $_SESSION[$name] = $value;
+	if($value !== false) mda_set($_SESSION,$value,$name);
 	return mda_get($_SESSION,$name);
 }
 
 function session_delete(){
 	$args = func_get_args();
 	foreach($args as $name) unset($_SESSION[$name]);
+	return true;
 }
