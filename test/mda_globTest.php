@@ -1,5 +1,6 @@
 <?php
 require_once(dirname(__DIR__).'/test_common.php');
+ld('/func/mda_glob');
 
 class FuncMDAGlobTest extends PHPUNIT_Framework_TestCase {
 
