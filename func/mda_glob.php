@@ -1,4 +1,5 @@
 <?php
+ld('/func/mda');
 
 function get($name=false){
 	if($name === false) return $_GET;
