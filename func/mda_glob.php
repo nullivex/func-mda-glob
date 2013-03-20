@@ -22,7 +22,7 @@ function server($name=false){
 }
 
 function session($name,$value=false){
-	if($value !== false) mda_set($_SESSION,$value,$name);
+	if($value !== false) mda_set($_SESSION,$name,$value);
 	return mda_get($_SESSION,$name);
 }
 
