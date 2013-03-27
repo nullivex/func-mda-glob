@@ -6,8 +6,6 @@ MDA (Multi Dimensional Array) access helpers for PHPs Superglobals
 Usage
 ----
 ```php
-ld('func/mda_glob');
-
 $_GET['test'] = 'value';
 
 $v = get('test'); //returns 'value'
